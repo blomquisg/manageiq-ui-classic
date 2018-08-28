@@ -26,6 +26,8 @@ module OpsController::Settings::LabelTagMapping
                                                 "ManageIQ::Providers::Azure::CloudManager::Vm"),
     "Image"               => MappableEntity.new("amazon:image:",
                                                 "ManageIQ::Providers::Amazon::CloudManager::Template"),
+    "HostRedhat"          => MappableEntity.new("redhat:host:",
+                                                "ManageIQ::Providers::Redhat::InfraManager::Host"),
     "ContainerProject"    => MappableEntity.new("kubernetes:container_project:",
                                                 "ContainerProject"),
     "ContainerRoute"      => MappableEntity.new("kubernetes:container_route:",
